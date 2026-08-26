@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>외대법학회 | HUFS Law Society</title>
+<script>
+(function(){
+  try {
+    var saved = localStorage.getItem('theme');
+    if (saved === 'light' || saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', saved);
+    }
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" as="style" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#home" class="brand">
+      <div class="brand-emblem">
+        <img class="brand-img" src="assets/logo.png" alt="외대법학회 엠블럼">
+      </div>
+      <span class="brand-name">외대법학회</span>
+    </a>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="#about">소개</a></li>
+      <li><a href="#advisor">지도교수</a></li>
+      <li><a href="#history">연혁</a></li>
+      <li><a href="#org">조직도</a></li>
+      <li><a href="#activities">활동</a></li>
+      <li><a href="#notice">공지</a></li>
+      <li><a href="#contact">오시는 길</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="다크 모드 전환" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.5 14.7A8.5 8.5 0 1 1 9.3 3.5a7 7 0 0 0 11.2 11.2z"/>
+        </svg>
+      </button>
+      <a href="#notice" class="nav-cta">모집 문의</a>
+      <button class="nav-burger" type="button" id="navBurger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navlinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-veil"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="wordmark-row">
+          <h1 class="wordmark">외대법학회</h1>
+          <p class="wordmark-en">HUFS Law Society</p>
+        </div>
+
+        <div class="logo3d hero-emblem" data-model="law" data-body="#9a7d44" data-relief="#e9d7ab"
+             data-speed="15deg" data-orbit="0deg 90deg 106%" data-exposure="1.05">
+          <img class="fallback" alt="외대법학회 엠블럼">
+        </div>
+
+        <div class="hero-rule"></div>
+
+        <p class="lead">한국외국어대학교 법학회는 판례 분석, 세미나, 모의재판 등 다양한 활동으로
+          법을 함께 공부하는 학술 동아리입니다.</p>
+        <div class="hero-actions">
+          <a href="#notice" class="btn btn-primary">모집 문의</a>
+          <a href="#about" class="btn btn-ghost">더 알아보기</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>13기</b><span>2026-2 활동 기수</span></div>
+          <div><b>12</b><span>정기 프로그램</span></div>
+          <div><b>5</b><span>운영 팀</span></div>
+        </div>
+      </div>
+
+      <div class="hero-gallery">
+        <a class="gal-stage" href="#activities" id="galStage" aria-label="활동 섹션으로 이동">
+          <div class="gal-track" id="galTrack"></div>
+          <span class="gal-cta">활동 보러 가기 &rarr;</span>
+        </a>
+        <div class="gal-ui">
+          <button class="gal-nav" type="button" id="galPrev" aria-label="이전 사진">&#8249;</button>
+          <div class="gal-dots" id="galDots"></div>
+          <button class="gal-nav" type="button" id="galNext" aria-label="다음 사진">&#8250;</button>
+        </div>
+        <div class="bld-cap"><b>외대법학회 활동 아카이브</b>
+          <span class="gal-count" id="galCount">01 / 24</span> · 클릭하면 활동 섹션으로</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-note">한국외국어대학교 서울캠퍼스 본관</div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">About</div>
+      <h2>외대법학회 소개</h2>
+      <p>법학에 관심 있는 외대생들이 모여 판례와 법 이론을 함께 연구하고, 법조 현장을 직접 경험하며 성장하는 학술 동아리입니다.</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>외대법학회는 법률 지식을 이론에 그치지 않고 판례분석, 모의재판, 법조인 초청 세미나 등
+          실전형 프로그램으로 확장해온 학술 동아리입니다. 매 학기 회원들은 자율 세미나와 연구발표회를
+          통해 스스로 주제를 정하고 토론하며, 법원견학과 법률경연대회 등 교외 활동을 통해 현장 감각을
+          함께 키워가고 있습니다.</p>
+        <ul class="value-list">
+          <li><div class="value-num">01</div><div><b>학술적 깊이</b><span>판례분석과 자율 세미나를 통해 법 이론을 실제 사례에 적용하는 훈련을 합니다.</span></div></li>
+          <li><div class="value-num">02</div><div><b>현장 경험</b><span>법원견학, 모의재판, 법조인·로스쿨생 초청 세미나로 진로를 구체화합니다.</span></div></li>
+          <li><div class="value-num">03</div><div><b>함께 성장하는 공동체</b><span>학술교류와 법률경연대회로 교내외 동료들과 함께 배우고 경쟁합니다.</span></div></li>
+        </ul>
+      </div>
+      <div>
+        <div class="side-card">
+          <div class="eyebrow">Vision</div>
+          <div class="vision-mini">唯一<small>유일 · ONLY ONE</small></div>
+          <p>다수의 의견을 따르는 대신 스스로 세운 하나의 기준으로 판단하고, 그 누구로도 대체할 수 없는 법률가로 성장하는 것을 지향합니다.</p>
+        </div>
+        <div class="side-card">
+          <div class="eyebrow">At a glance</div>
+          <div class="fact-row">
+            <div><b>13기</b><span>2026-2</span></div>
+            <div><b>12</b><span>정기 프로그램</span></div>
+            <div><b>5</b><span>운영 팀</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="advisor" id="advisor">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Advisor</div>
+      <h2>지도교수</h2>
+      <p>학회의 학술 방향을 함께 이끌어 주시는 지도교수님을 소개합니다.</p>
+    </div>
+    <div class="advisor-card">
+      <figure class="portrait">
+        <img src="assets/advisor.jpg" alt="이창현 교수">
+        <figcaption>이창현 교수</figcaption>
+      </figure>
+      <div class="advisor-body">
+        <h2>이창현 교수</h2>
+        <p class="advisor-role">한국외국어대학교 법학전문대학원</p>
+        <p class="advisor-desc">형사소송법 분야의 권위자로서, 이론적 엄밀함과 실무 감각을 함께 갖춘 가르침을 전해 주십니다.
+          학회의 판례분석과 세미나가 학술적 깊이를 잃지 않도록 방향을 잡아 주시는 분입니다.</p>
+        <ul class="advisor-tags">
+          <li>형사소송법</li><li>형사법 실무</li><li>판례 연구</li><li>학회 지도</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="history" id="history">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">History</div>
+      <h2>연혁</h2>
+      <p>학회 창립부터 현재까지의 발자취입니다. 창립 연도와 주요 연혁을 채워주세요.</p>
+    </div>
+    <div class="timeline">
+      <div class="t-item"><div class="t-dot"></div>
+        <div class="t-year">20XX<span class="placeholder-tag tag-dark">창립 연도 입력 필요</span></div>
+        <div class="t-desc">외대법학회 창립</div></div>
+      <div class="t-item"><div class="t-dot"></div>
+        <div class="t-year">20XX</div>
+        <div class="t-desc">주요 연혁을 추가해주세요 (예: 첫 모의재판 개최, 학술교류 협약 등)</div></div>
+      <div class="t-item"><div class="t-dot"></div>
+        <div class="t-year">2026-1 · 12기</div>
+        <div class="t-desc">판례분석·학술교류·법률경연대회·법조인 및 로스쿨생 초청 세미나·자율 세미나 연구발표회·법원견학·형법 스터디&amp;세미나·모의재판 진행</div></div>
+      <div class="t-item active"><div class="t-dot"></div>
+        <div class="t-year">2026-2 · 13기</div>
+        <div class="t-desc">13기 임원진 구성 및 2026-2학기 정기 프로그램 운영</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="org">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Organization</div>
+      <h2>13기 임원진</h2>
+      <p>매 학회 종강 총회에서 학회원의 추천과 투표로 학회장·부학회장을 선발하며,
+        회칙 제9조에 따라 임원진 임기는 한 학기로 제한됩니다.</p>
+    </div>
+    <div class="org-lead-grid">
+      <div class="lead-card"><div class="lead-avatar">회장</div><b>임수민</b><span>정치외교학과</span>
+        <span class="lead-role">President</span></div>
+      <div class="lead-card"><div class="lead-avatar">부회장</div><b>김태주</b><span>독일어과</span>
+        <span class="lead-role">Vice President</span></div>
+      <div class="lead-card"><div class="lead-avatar">운영</div><b>박주원</b><span>ELLT학과</span>
+        <span class="lead-role">Operations Team Leader</span></div>
+    </div>
+    <p class="org-note">임원진 사진은 추후 업데이트될 예정입니다.</p>
+    <div class="dept-grid">
+      <div class="dept-card"><b>운영팀</b><span>학회원 선발과 출석·회계 관리, 학회 운영 시스템 전반을 담당합니다.</span>
+        <span class="dept-lead">Operations Team</span></div>
+      <div class="dept-card"><b>학술교류팀</b><span>법학 이수학점이 높은 학회원으로 구성해 법학 지식과 경험을 학회원들과 나눕니다.</span>
+        <span class="dept-lead">Academic Exchange Team</span></div>
+      <div class="dept-card"><b>기록팀</b><span>매 학회 활동을 녹음·속기로 기록한 뒤 편집팀과 홍보팀에 전달합니다.</span>
+        <span class="dept-lead">Record Team</span></div>
+      <div class="dept-card"><b>편집팀</b><span>기록팀의 기록 내용을 전달받아 수정·편집하고 활동집 발간에 참여합니다.</span>
+        <span class="dept-lead">Editorial Team</span></div>
+      <div class="dept-card"><b>홍보팀</b><span>전달받은 기록물로 SNS 게시물을 작성하고 학회 인스타그램을 운영합니다.</span>
+        <span class="dept-lead">PR Team</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="activities" id="activities">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Activities</div>
+      <span class="gen-badge">[13기] <b>2026-2</b> 학기 활동</span>
+      <h2>이번 학기 활동</h2>
+      <p>카드를 누르면 활동 소개와 진행 방식, 자료 발췌본을 볼 수 있습니다.</p>
+    </div>
+    <div class="act-grid" id="act-grid"></div>
+  </div>
+</section>
+
+<section id="notice">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Notice</div>
+      <h2>공지사항</h2>
+      <p>새 공지가 올라오면 이곳과 학회 인스타그램에 함께 안내합니다.
+        신입 회원 모집은 기수별로 운영진이 개별 리크루팅으로 진행합니다.</p>
+    </div>
+    <div class="notice-wrap">
+      <ul class="notice-list" id="notice-list"></ul>
+      <div class="recruit-card">
+        <div>
+          <div class="eyebrow" style="color:#e3c98f;">Instagram</div>
+          <h3>가장 빠른 소식은<br>인스타그램에서</h3>
+          <p>강연 안내, 활동 사진, 모집 소식은 학회 공식 인스타그램에 먼저 올라옵니다.
+            이곳 공지사항에는 확정된 안내만 정리해 올립니다.</p>
+        </div>
+        <a href="https://www.instagram.com/hufs_law" target="_blank" rel="noopener"
+           class="btn btn-primary">@hufs_law 바로가기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Contact</div>
+      <h2>오시는 길 · 문의</h2>
+      <p>학회 활동 및 지원 관련 문의는 아래 채널로 연락해주세요.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <ul class="info-list">
+          <li><div class="info-ico">☎</div><div><b>연락처</b><span>학회 대표 연락처를 입력해주세요 <span class="placeholder-tag">입력 필요</span></span></div></li>
+          <li><div class="info-ico">◈</div><div><b>네이버 카페</b><a href="https://m.cafe.naver.com/ca-fe/hufslawsociety" target="_blank" rel="noopener">m.cafe.naver.com/ca-fe/hufslawsociety</a></div></li>
+          <li><div class="info-ico">◎</div><div><b>위치</b><span>서울특별시 동대문구 이문로 107, 한국외국어대학교 서울캠퍼스</span></div></li>
+        </ul>
+        <div class="sns-row">
+          <a href="https://www.instagram.com/hufs_law" target="_blank" rel="noopener">Instagram @hufs_law</a>
+          <a href="https://m.cafe.naver.com/ca-fe/hufslawsociety" target="_blank" rel="noopener">Naver Cafe</a>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%9D%B4%EB%AC%B8%EB%A1%9C%20107%20%ED%95%9C%EA%B5%AD%EC%99%B8%EA%B5%AD%EC%96%B4%EB%8C%80%ED%95%99%EA%B5%90&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-wrap">
+    <span>© 2026 HUFS Law Society (외대법학회). All rights reserved.</span>
+    <ul class="footer-links">
+      <li><a href="https://www.instagram.com/hufs_law" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://m.cafe.naver.com/ca-fe/hufslawsociety" target="_blank" rel="noopener">Naver Cafe</a></li>
+      <li><a href="#home">맨 위로</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="assets/gallery-data.js"></script>
+<script src="assets/notices-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
